@@ -1,0 +1,78 @@
+section{
+    display: flex;
+    justify-content: center;
+}
+#fondo{
+    background: url(./ima/fondo.png);
+    width: 60%;
+    height: 300px; 
+  
+}
+.anifo{
+    animation: fondo 5s linear infinite;
+}
+
+@keyframes fondo{
+    100%{
+        background-position-x: -1890px;
+    }
+}
+#carro img{
+    height: 60%;
+    width: 30%;
+    margin-top: 100px;
+    margin-left: 16%;
+}
+#llanta{
+    position: absolute;
+    height: 11%;
+    top: 217px;
+    left: 31.4%;
+  
+}
+#llanta img{
+    height: 70px;
+    width: 80px;  
+  
+}
+.anillan{ animation: llanta 3s linear infinite; 
+}
+@keyframes llanta{
+    100%
+{transform: rotate(360deg);
+}
+}
+
+#llanta1{
+    position: absolute;
+    height: 11%;
+    top: 217px;
+    left: 42.3%;
+  
+}
+#llanta1 img{
+    height: 70px;
+    width: 80px;  
+  
+}
+@keyframes llanta{100%
+{transform: rotate(360deg);
+}
+}
+
+#humo{ 
+    position: absolute;
+    background: url(ima/humo.png);
+    width: 54px;
+    height: 66px;
+    left: 542px;
+    top: 222px;
+  
+}
+.anihu{
+    animation: humo_po 2s steps(4) infinite;
+}
+@keyframes humo_po{100%
+    {background-position-x: 418px;
+    }
+}
